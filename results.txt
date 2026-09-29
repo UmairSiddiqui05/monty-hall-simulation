@@ -1,0 +1,42 @@
+Running experiments with 100,000 games, seed=42
+
+[1] Stay vs switch vs coin flip
+  saved figures/01_head_to_head.png
+[2] Convergence over time
+  saved figures/02_convergence.png
+[3] Why switching works
+  saved figures/03_outcome_breakdown.png
+[4] N-door generalization
+  saved figures/04_n_doors.png
+[5] Ignorant host variant
+  saved figures/05_ignorant_host.png
+[6] Short-run variance
+  saved figures/06_short_run_variance.png
+
+=== RESULTS ===
+
+strategy  games  wins win_rate
+    stay 100000 33120   0.3312
+  switch 100000 66740   0.6674
+  random 100000 49912   0.4991 
+
+first_pick share_of_games stay_result switch_result
+       car         0.3312         win          lose
+      goat         0.6688        lose           win 
+
+ doors  stay_win_rate  switch_win_rate  theory_switch
+     3         0.3319           0.6681         0.6667
+     4         0.2479           0.7521         0.7500
+     5         0.2012           0.7988         0.8000
+    10         0.1003           0.8997         0.9000
+    20         0.0502           0.9498         0.9500
+    50         0.0199           0.9801         0.9800
+   100         0.0098           0.9902         0.9900 
+
+                  host strategy  valid_games win_rate
+Knowing host (classic)     stay       100000   0.3312
+Knowing host (classic)   switch       100000   0.6674
+         Ignorant host     stay        66463   0.4987
+         Ignorant host   switch        66739   0.5014 
+
+Switcher beats stayer over 30 games in 99.4% of sessions

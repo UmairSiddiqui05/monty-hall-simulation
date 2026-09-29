@@ -1,0 +1,5 @@
+host,strategy,valid_games,win_rate
+Knowing host (classic),stay,100000,0.3312
+Knowing host (classic),switch,100000,0.6674
+Ignorant host,stay,66463,0.498743661887065
+Ignorant host,switch,66739,0.5014159636794079

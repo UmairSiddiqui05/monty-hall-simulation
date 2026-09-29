@@ -1,0 +1,4 @@
+strategy,games,wins,win_rate
+stay,100000,33120,0.3312
+switch,100000,66740,0.6674
+random,100000,49912,0.49912
